@@ -489,8 +489,8 @@ jobs:
 
 
   publish-snapshot:
-    executor: docker-python3-java11
-    # executor: vm-ubuntu-1604                          # (use for pipeline debugging only!)
+    # executor: docker-python3-java11
+    executor: vm-ubuntu-1604                          # (use for pipeline debugging only!)
     description: |
       Publishes a SNAPSHOT release version via jitpack.io
       whenever one of these keywords: [major], [minor] or [patch]
@@ -504,8 +504,8 @@ jobs:
 
 
   publish-release:
-    executor: docker-python3-java11
-    # executor: vm-ubuntu-1604                          # (use for pipeline debugging only!)
+    # executor: docker-python3-java11
+    executor: vm-ubuntu-1604                          # (use for pipeline debugging only!)
     description: |
       Publishes a (stable) release version via jitpack.io
       whenever a 'release' branch is pushed to remote.
